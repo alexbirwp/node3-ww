@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="http://pngimg.com/uploads/poop/poop_PNG25.png" >
+</head>
+<body>
+    <div class="main-cont">
+        {{>header}}
+        <p>Use this site for weather</p>
+        <form>
+            <input name='addres' placeholder="location">
+        <button>Search</button>
+    </form>
+        <p id="result"></p>
+    </div>
+    {{>footer}}
+    <script src="js/script.js"></script>
+</body>
+</html>
