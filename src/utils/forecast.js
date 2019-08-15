@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
             callback("Error: " + body.error , undefined);
         } else {
             const {precipProbability, temperature} = body.currently;
-            callback(undefined, "It is currently " + temperature + " degrees out. There is a " + precipProbability + "% chance of rain. " + body.daily.data[0].summary);
+            callback(undefined, "It is currently " + temperature + " degrees out. There is a " + precipProbability + "% chance of rain. " + body.daily.data[0].summary + ". All week: " + body.daily.summary);
         }
     });
 };
